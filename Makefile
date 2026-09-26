@@ -2,7 +2,7 @@ SRCS := $(wildcard src/*.c)
 _OBJS := $(SRCS:.c=.o)
 OBJS := $(patsubst src/%.o,build/%,$(_OBJS))
 
-CCFLAGS := -O3 -ffunction-sections -fdata-sections
+CCFLAGS := -O3 -ffunction-sections -fdata-sections -Wall -Wextra
 
 # Make cleans up .unstripped files on its own.
 # I appreciate the enthusiasm, but the command

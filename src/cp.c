@@ -15,7 +15,6 @@ int main(int argc, char *argv[]) {
 	int fd_src, fd_dest;
 	char buf[4096];
 	ssize_t nread;
-	int errno_save;
 	fd_src = open(src, O_RDONLY);
 	if (fd_src < 0) {
 		//printf("%s: failed to open source\n", argv[0]);
